@@ -1,3 +1,8 @@
+body {
+	font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+	font-size: 18px;
+}
+
 .bigTitle {
 	font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	font-size: 45px;
@@ -5,6 +10,44 @@
 	font-variant: normal;
 	font-weight: normal;
 	line-height: 60px;
-	margin-top: 0.3em;
+	margin-top: 70px;
 	margin-bottom: 0em;
+}
+
+hr {
+	width: 50%;
+}
+
+nav ul {
+	list-style: none;
+	margin-top: 0px;
+	/*width: 100%;*/
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 24px;
+	width: 20%;
+	float: left;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+nav ul li:hover {
+	background: #008888;
+	transition: 1s;
+}
+
+nav {
+	background: #00ffff;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	left: 0px;
+	padding-top: 0px;
 }
