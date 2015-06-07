@@ -1,34 +1,81 @@
 body {
-	font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+	font-family: 'Open Sans';
 	font-size: 18px;
+	padding: 0;
+	margin: 0;
 }
 
+/* Put all paragraphs here. */
+
 .bigTitle {
-	font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 	font-size: 45px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 60px;
-	margin-top: 70px;
-	margin-bottom: 0em;
+	margin: 0;
+	text-align: center;
 }
 
-hr {
-	width: 50%;
+.mediumTitle {
+	font-size: 30px;
+	margin: 0;
+	text-align: center;
 }
+
+.smallTitle {
+	font-size: 25px;
+	margin: 0;
+	text-align: center;
+}
+
+.description {
+
+}
+
+/* Put all divs/ area here */
+
+.navBar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.fullpage {
+	height: 1000px;
+	width: 100%;
+	margin: 0;
+}
+
+.fullpage.page1 {
+	background: #e0ffff;
+}
+
+.fullpage.page2 {
+	background: #f4eeff;
+}
+
+.fullpage.page3 {
+	background: #fff4e7;
+}
+
+/* Put list styles here. */
 
 nav ul {
+	width: 100%;
 	list-style: none;
 	margin-top: 0px;
-	/*width: 100%;*/
+	padding: 0;
+
 }
 
 nav ul li {
-	display: inline-block;
+	display: inline;
+	background: #00ffff;
 	font-size: 24px;
-	width: 20%;
-	float: left;
+	width: 8%;
+	float: right;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	margin-left: 0px;
@@ -44,10 +91,19 @@ nav ul li:hover {
 }
 
 nav {
-	background: #00ffff;
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	left: 0px;
 	padding-top: 0px;
+}
+
+.longLi {
+	width: 15%;
+}
+
+nav a{
+	border: 0;
+	text-decoration: none;
+	color: #000000;
 }
