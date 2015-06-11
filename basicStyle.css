@@ -20,6 +20,7 @@ body {
 .mediumTitle {
 	font-size: 30px;
 	margin: 0;
+	padding-top: 50px;
 	text-align: center;
 }
 
@@ -33,10 +34,15 @@ body {
 
 }
 
+.copyright {
+	padding-top: 140px;
+}
+
 /* Put all divs/ area here */
 
 .navBar {
 	width: 100%;
+	background: rgba(0,0,0,0);
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -72,7 +78,7 @@ nav ul {
 
 nav ul li {
 	display: inline;
-	background: #00ffff;
+	/*background: #00ffff;*/
 	font-size: 24px;
 	width: 8%;
 	float: right;
@@ -86,8 +92,26 @@ nav ul li {
 }
 
 nav ul li:hover {
-	background: #008888;
-	transition: 1s;
+}
+
+.subMenu {
+	position: absolute;
+	top: 100%;
+	width: 15%;
+	padding: 0;
+	display: none;
+}
+
+.subMenu li {
+	width: 100%;
+	display: block;
+	margin-left: 0;
+	margin-top: 0;
+	font-size: 15px;
+}
+
+.withDropDown:hover > ul {
+	display: block;
 }
 
 nav {
@@ -106,4 +130,27 @@ nav a{
 	border: 0;
 	text-decoration: none;
 	color: #000000;
+}
+
+a {
+	outline: none;
+}
+
+nav ul li button {
+	border-radius: 4px;
+	height: 40px;
+	border: 1px solid #000000;
+	font-family: "Open Sans";
+	background: rgba(0,0,0,0.1);
+	font-size: 25px;
+}
+
+nav ul li button:hover {
+	cursor: pointer;
+}
+
+footer {
+	height: 180px;
+	width: 100%;
+	text-align: center;
 }
